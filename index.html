@@ -1209,23 +1209,31 @@
             </div>
         </section>
 
-        <section class="partners-section" id="partners">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Нашите Партньори</h2>
-                    <p>Работим с водещи специалисти в бранша</p>
-                </div>
-                <div class="partners-grid">
-                    <div class="partner-card">
-                        <h2>Транспортер Иван Иванов ЕООД</h2>
-                        <p><strong>Пътна помощ и асистанс</strong><br>24/7 помощ на пътя</p>
-                        <a href="https://patna-pomosht-kostinbrod.bg" target="_blank" rel="noopener noreferrer" class="partner-link" aria-label="Посетете сайта на Транспортер Иван Иванов">
-                            Посети сайта
-                        </a>
-                    </div>
-                </div>
+     <section class="partners-section" id="partners">
+    <div class="container">
+        <div class="section-header">
+            <h2>Нашите Партньори</h2>
+            <p>Работим с водещи специалисти в бранша</p>
+        </div>
+        <div class="partners-grid">
+            <div class="partner-card">
+                <h2>Транспортер Иван Иванов ЕООД</h2>
+                <p><strong>Пътна помощ и асистанс</strong><br>24/7 помощ на пътя</p>
+                <a href="https://patna-pomosht-kostinbrod.bg" target="_blank" rel="noopener" class="partner-link" aria-label="Посетете сайта на Транспортер Иван Иванов">
+                    Посети сайта
+                </a>
             </div>
-        </section>
+
+            <div class="partner-card">
+                <h2>MOVER Studio</h2>
+                <p><strong>Уеб дизайн и разработка</strong><br>Дигитални услуги: уеб сайтове, SEO и поддръжка</p>
+                <a href="https://moverstudio.online" target="_blank" rel="noopener" class="partner-link" title="MOVER Studio — уеб дизайн и разработка" aria-label="Посетете сайта на MOVER Studio — уеб дизайн и разработка">
+                    MOVER Studio — уеб дизайн и разработка
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
 
         <section class="contact-section" id="contact">
             <div class="container">
@@ -1275,31 +1283,76 @@
     </main>
 
     <footer>
-        <div class="footer-content">
-            <h3 style="color: var(--accent); margin-bottom: 20px; font-size: 2em;">Нико Аутогаз Сервиз</h3>
-            <p style="font-size: 1.15em; margin-bottom: 20px;">Професионални услуги за автогазови уредби в София</p>
-            <div class="footer-links">
-                <a href="#services">Услуги</a>
-                <a href="#specializations">Специализации</a>
-                <a href="#projects">Проекти</a>
-                <a href="#reviews">Отзиви</a>
-                <a href="#partners">Партньори</a>
-                <a href="#contact">Контакти</a>
-                <a href="https://www.facebook.com/nikoautogas/?locale=bg_BG" target="_blank" rel="noopener">Facebook</a>
-                <a href="https://maps.app.goo.gl/5UjoDQrCE9BPyyNm8" target="_blank" rel="noopener">Google Maps</a>
-            </div>
-            <div style="margin: 30px 0; padding: 25px; background: rgba(255,255,255,0.05); border-radius: 15px;">
-                <p style="font-size: 1.2em;"><strong>📞 Телефон:</strong> <a href="tel:+359895687142" style="color: var(--accent); text-decoration: none;">089 568 7142</a></p>
-                <p style="margin-top: 10px;"><strong>📍 Адрес:</strong> ул. Еърсофт, зад Евромастер, район Обеля, София</p>
-            </div>
-            <p style="margin-top: 25px; font-size: 0.95em; opacity: 0.8;">
-                <strong>Специализации:</strong> VW, Skoda, Audi, Seat (FSI, TSI) • VW, Skoda, Fiat, Opel, Iveco (Фабрични CNG и LPG) • Hyundai, Kia, Mazda (GDI) • Всички марки и модели
-            </p>
-            <hr style="margin: 35px 0; border: none; border-top: 1px solid rgba(255,255,255,0.1);">
-            <p>&copy; 2026 Нико Аутогаз Сервиз. Всички права запазени.</p>
-            <p style="font-size: 0.9em; margin-top: 10px; opacity: 0.7;">Работим с KME, PRINS, STAG, HANA MAGIC</p>
+    <style>
+    .footer-content {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      color: #fff;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 18px;
+      margin: 15px 0 0 0;
+    }
+    .footer-links a {
+      color: rgba(255,255,255,0.85);
+      text-decoration: none;
+      transition: color .15s ease;
+    }
+    .footer-links a:hover { color: var(--accent); }
+    .footer-meta {
+      margin: 30px 0;
+      padding: 25px;
+      background: rgba(255,255,255,0.03);
+      border-radius: 12px;
+    }
+    .footer-credit {
+      margin-top: 30px;
+      font-size: 0.95em;
+      opacity: 0.9;
+    }
+    .footer-credit a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .small-muted { font-size: 0.9em; opacity: 0.75; margin-top: 10px; }
+    </style>
+
+    <div class="footer-content">
+        <h3 style="color: var(--accent); margin-bottom: 18px; font-size: 1.9em;">Нико Аутогаз Сервиз</h3>
+        <p style="font-size: 1.15em; margin-bottom: 14px;">Професионални услуги за автогазови уредби в София</p>
+
+        <div class="footer-links">
+            <a href="#services">Услуги</a>
+            <a href="#specializations">Специализации</a>
+            <a href="#projects">Проекти</a>
+            <a href="#reviews">Отзиви</a>
+            <a href="#partners">Партньори</a>
+            <a href="#contact">Контакти</a>
+            <a href="https://www.facebook.com/nikoautogas/?locale=bg_BG" target="_blank" rel="noopener">Facebook</a>
+            <a href="https://maps.app.goo.gl/5UjoDQrCE9BPyyNm8" target="_blank" rel="noopener">Google Maps</a>
         </div>
-    </footer>
+
+        <div class="footer-meta">
+            <p style="font-size: 1.15em; margin:0;"><strong>📞 Телефон:</strong> <a href="tel:+359895687142" style="color: var(--accent); text-decoration: none;">089 568 7142</a></p>
+            <p style="margin-top: 8px;"><strong>📍 Адрес:</strong> ул. Еърсофт, зад Евромастер, район Обеля, София</p>
+        </div>
+
+        <p style="margin-top: 12px; font-size: 0.95em; opacity: 0.85;">
+            <strong>Специализации:</strong> VW, Skoda, Audi, Seat (FSI, TSI) • VW, Skoda, Fiat, Opel, Iveco (Фабрични CNG и LPG) • Hyundai, Kia, Mazda (GDI) • Всички марки и модели
+        </p>
+
+        <hr style="margin: 30px 0; border: none; border-top: 1px solid rgba(255,255,255,0.06);">
+
+        <p class="footer-credit">
+            &copy; 2026 <a href="https://moverstudio.online" title="MOVER Studio — уеб дизайн и разработка" target="_blank" rel="noopener">MOVER Studio — уеб дизайн и разработка</a>. Всички права запазени.
+        </p>
+        <p class="small-muted">Работим с KME, PRINS, STAG, HANA MAGIC</p>
+    </div>
+</footer>
 
     <script>
         // Mobile menu toggle
@@ -1342,3 +1395,4 @@
     </script>
 </body>
 </html>
+
