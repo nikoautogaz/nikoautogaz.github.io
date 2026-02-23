@@ -867,6 +867,32 @@
                 grid-template-columns: 1fr;
             }
         }
+        /* Utility classes to replace inline styles flagged by linter */
+        .remont-link {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 12px 24px;
+            background: var(--accent);
+            color: var(--light);
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 700;
+            transition: all 0.3s;
+        }
+        .why-us-section .section-header h2 { color: var(--light); }
+        .why-us-section .section-header p { color: rgba(255,255,255,0.9); }
+        .contact-section .section-header h2 { color: var(--accent); }
+        .contact-section .section-header p { color: rgba(255,255,255,0.9); }
+        .social-btn--maps { background: #4285F4; }
+        footer .footer-title { color: var(--accent); margin-bottom: 20px; font-size: 2em; }
+        .footer-lead { font-size: 1.15em; margin-bottom: 20px; }
+        .contact-card { margin: 30px 0; padding: 25px; background: rgba(255,255,255,0.05); border-radius: 15px; }
+        .contact-card p.contact-tele { font-size: 1.2em; }
+        .contact-card p.address { margin-top: 10px; }
+        .phone-link { color: var(--accent); text-decoration: none; }
+        .footer-specs { margin-top: 25px; font-size: 0.95em; opacity: 0.8; }
+        .footer-hr { margin: 35px 0; border: none; border-top: 1px solid rgba(255,255,255,0.1); }
+        .footer-note { font-size: 0.9em; margin-top: 10px; opacity: 0.7; }
     </style>
 </head>
 <body>
@@ -946,7 +972,7 @@
                         <p>Специалисти по ремонт и поддръжка на всички типове фабрични газови и метанови инжекциони. Работим с оригинални компоненти и имаме опит с всички поколения CNG и LPG системи.</p>
                         
                         <!-- НОВА ДОБАВКА - след параграфа, преди бранд таговете -->
-                        <a href="/remont-fabrichen-metan-sofia.html" style="display: inline-block; margin: 20px 0; padding: 12px 24px; background: var(--accent); color: var(--light); text-decoration: none; border-radius: 25px; font-weight: 700; transition: all 0.3s;" aria-label="Научи повече за ремонт на фабричен метан">
+                        <a href="/remont-fabrichen-metan-sofia.html" class="remont-link" aria-label="Научи повече за ремонт на фабричен метан">
                             Научи повече за ремонт на фабричен метан →
                         </a>
                         
@@ -1084,8 +1110,8 @@
         <section class="why-us-section">
             <div class="container">
                 <div class="section-header">
-                    <h2 style="color: var(--light);">Защо Избират Нас ?</h2>
-                    <p style="color: rgba(255,255,255,0.9);">Повече от 500 доволни клиенти в София и страната</p>
+                    <h2>Защо Избират Нас ?</h2>
+                    <p>Повече от 500 доволни клиенти в София и страната</p>
                 </div>
                 <div class="features-grid">
                     <div class="feature-item">
@@ -1209,37 +1235,29 @@
             </div>
         </section>
 
-     <section class="partners-section" id="partners">
-    <div class="container">
-        <div class="section-header">
-            <h2>Нашите Партньори</h2>
-            <p>Работим с водещи специалисти в бранша</p>
-        </div>
-        <div class="partners-grid">
-            <div class="partner-card">
-                <h2>Транспортер Иван Иванов ЕООД</h2>
-                <p><strong>Пътна помощ и асистанс</strong><br>24/7 помощ на пътя</p>
-                <a href="https://patna-pomosht-kostinbrod.bg" target="_blank" rel="noopener" class="partner-link" aria-label="Посетете сайта на Транспортер Иван Иванов">
-                    Посети сайта
-                </a>
+        <section class="partners-section" id="partners">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Нашите Партньори</h2>
+                    <p>Работим с водещи специалисти в бранша</p>
+                </div>
+                <div class="partners-grid">
+                    <div class="partner-card">
+                        <h2>Транспортер Иван Иванов ЕООД</h2>
+                        <p><strong>Пътна помощ и асистанс</strong><br>24/7 помощ на пътя</p>
+                        <a href="https://patna-pomosht-kostinbrod.bg" target="_blank" rel="noopener noreferrer" class="partner-link" aria-label="Посетете сайта на Транспортер Иван Иванов">
+                            Посети сайта
+                        </a>
+                    </div>
+                </div>
             </div>
-
-            <div class="partner-card">
-                <h2>MOVER Studio</h2>
-                <p><strong>Уеб дизайн и разработка</strong><br>Дигитални услуги: уеб сайтове, SEO и поддръжка</p>
-                <a href="https://moverstudio.online" target="_blank" rel="noopener" class="partner-link" title="MOVER Studio — уеб дизайн и разработка" aria-label="Посетете сайта на MOVER Studio — уеб дизайн и разработка">
-                    MOVER Studio — уеб дизайн и разработка
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
         <section class="contact-section" id="contact">
             <div class="container">
                 <div class="section-header">
-                    <h2 style="color: var(--accent);">Свържете се с нас</h2>
-                    <p style="color: rgba(255,255,255,0.9);">Обадете се за безплатна консултация и оферта</p>
+                    <h2>Свържете се с нас</h2>
+                    <p>Обадете се за безплатна консултация и оферта</p>
                 </div>
                 <div class="contact-info">
                     <h3>📞 Обадете се</h3>
@@ -1272,7 +1290,7 @@
                             <svg width="24" height="24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
                             Facebook страница
                         </a>
-                        <a href="https://maps.app.goo.gl/5UjoDQrCE9BPyyNm8" target="_blank" rel="noopener noreferrer" class="social-btn" style="background: #4285F4;" aria-label="Посетете нашия профил в Google Maps">
+                        <a href="https://maps.app.goo.gl/5UjoDQrCE9BPyyNm8" target="_blank" rel="noopener noreferrer" class="social-btn social-btn--maps" aria-label="Посетете нашия профил в Google Maps">
                             <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                             Google Maps & Отзиви
                         </a>
@@ -1283,76 +1301,31 @@
     </main>
 
     <footer>
-    <style>
-    .footer-content {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 40px 20px;
-      color: #fff;
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    }
-    .footer-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px 18px;
-      margin: 15px 0 0 0;
-    }
-    .footer-links a {
-      color: rgba(255,255,255,0.85);
-      text-decoration: none;
-      transition: color .15s ease;
-    }
-    .footer-links a:hover { color: var(--accent); }
-    .footer-meta {
-      margin: 30px 0;
-      padding: 25px;
-      background: rgba(255,255,255,0.03);
-      border-radius: 12px;
-    }
-    .footer-credit {
-      margin-top: 30px;
-      font-size: 0.95em;
-      opacity: 0.9;
-    }
-    .footer-credit a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-    .small-muted { font-size: 0.9em; opacity: 0.75; margin-top: 10px; }
-    </style>
-
-    <div class="footer-content">
-        <h3 style="color: var(--accent); margin-bottom: 18px; font-size: 1.9em;">Нико Аутогаз Сервиз</h3>
-        <p style="font-size: 1.15em; margin-bottom: 14px;">Професионални услуги за автогазови уредби в София</p>
-
-        <div class="footer-links">
-            <a href="#services">Услуги</a>
-            <a href="#specializations">Специализации</a>
-            <a href="#projects">Проекти</a>
-            <a href="#reviews">Отзиви</a>
-            <a href="#partners">Партньори</a>
-            <a href="#contact">Контакти</a>
-            <a href="https://www.facebook.com/nikoautogas/?locale=bg_BG" target="_blank" rel="noopener">Facebook</a>
-            <a href="https://maps.app.goo.gl/5UjoDQrCE9BPyyNm8" target="_blank" rel="noopener">Google Maps</a>
+        <div class="footer-content">
+            <h3 class="footer-title">Нико Аутогаз Сервиз</h3>
+            <p class="footer-lead">Професионални услуги за автогазови уредби в София</p>
+            <div class="footer-links">
+                <a href="#services">Услуги</a>
+                <a href="#specializations">Специализации</a>
+                <a href="#projects">Проекти</a>
+                <a href="#reviews">Отзиви</a>
+                <a href="#partners">Партньори</a>
+                <a href="#contact">Контакти</a>
+                <a href="https://www.facebook.com/nikoautogas/?locale=bg_BG" target="_blank" rel="noopener">Facebook</a>
+                <a href="https://maps.app.goo.gl/5UjoDQrCE9BPyyNm8" target="_blank" rel="noopener">Google Maps</a>
+            </div>
+            <div class="contact-card">
+                <p class="contact-tele"><strong>📞 Телефон:</strong> <a href="tel:+359895687142" class="phone-link">089 568 7142</a></p>
+                <p class="address"><strong>📍 Адрес:</strong> ул. Еърсофт, зад Евромастер, район Обеля, София</p>
+            </div>
+            <p class="footer-specs">
+                <strong>Специализации:</strong> VW, Skoda, Audi, Seat (FSI, TSI) • VW, Skoda, Fiat, Opel, Iveco (Фабрични CNG и LPG) • Hyundai, Kia, Mazda (GDI) • Всички марки и модели
+            </p>
+            <hr class="footer-hr">
+            <p>© 2026 Нико Аутогаз Сервиз. Всички права запазени.</p>
+            <p class="footer-note">Работим с KME, PRINS, STAG, HANA MAGIC</p>
         </div>
-
-        <div class="footer-meta">
-            <p style="font-size: 1.15em; margin:0;"><strong>📞 Телефон:</strong> <a href="tel:+359895687142" style="color: var(--accent); text-decoration: none;">089 568 7142</a></p>
-            <p style="margin-top: 8px;"><strong>📍 Адрес:</strong> ул. Еърсофт, зад Евромастер, район Обеля, София</p>
-        </div>
-
-        <p style="margin-top: 12px; font-size: 0.95em; opacity: 0.85;">
-            <strong>Специализации:</strong> VW, Skoda, Audi, Seat (FSI, TSI) • VW, Skoda, Fiat, Opel, Iveco (Фабрични CNG и LPG) • Hyundai, Kia, Mazda (GDI) • Всички марки и модели
-        </p>
- <p class="small-muted">Работим с KME, PRINS, STAG, HANA MAGIC</p>
-        <hr style="margin: 30px 0; border: none; border-top: 1px solid rgba(255,255,255,0.06);">
-
-        <p class="footer-credit">
-            &copy; 2026 <a href="https://moverstudio.online" title="MOVER Studio — уеб дизайн и разработка" target="_blank" rel="noopener">MOVER Studio — уеб дизайн и разработка</a>. Всички права запазени.
-        </p>
-       
-    </div>
-</footer>
+    </footer>
 
     <script>
         // Mobile menu toggle
@@ -1395,5 +1368,3 @@
     </script>
 </body>
 </html>
-
-
